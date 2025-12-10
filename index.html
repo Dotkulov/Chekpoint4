@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GustoMaster - Кулинарные курсы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка и навигация -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>GustoMaster</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#courses">Курсы</a></li>
+                    <li><a href="#chefs">Шефы</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                    <li><a href="#" class="btn btn-small">Записаться</a></li>
+                </ul>
+                
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Раскройте <span class="highlight">кулинарный гений</span> в себе</h1>
+                <p class="hero-text">Профессиональные курсы от шеф-поваров с мишленовскими звездами. От основ до высокой кухни.</p>
+                <div class="hero-buttons">
+                    <a href="#courses" class="btn btn-primary">Выбрать курс</a>
+                    <a href="#contact" class="btn btn-secondary">Бесплатный урок</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Шеф-повар готовит">
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Профессионалы</h3>
+                    <p>Преподают шефы из лучших ресторанов мира с опытом от 10 лет</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Малые группы</h3>
+                    <p>Не более 8 человек в группе для индивидуального подхода</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-utensil-spoon"></i>
+                    </div>
+                    <h3>Практика</h3>
+                    <p>80% времени - практические занятия на профессиональной кухне</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Сертификат</h3>
+                    <p>Международный сертификат по окончанию любого курса</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Курсы -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <h2 class="section-title">Наши курсы</h2>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="basic">Для начинающих</button>
+                <button class="tab-btn" data-tab="advanced">Продвинутые</button>
+                <button class="tab-btn" data-tab="professional">Профессиональные</button>
+            </div>
+            
+            <div class="courses-grid">
+                <!-- Курс 1 -->
+                <div class="course-card" data-category="basic">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Основы кулинарии">
+                    </div>
+                    <div class="course-content">
+                        <span class="course-category">Основы</span>
+                        <h3>Основы кулинарии</h3>
+                        <p>Научитесь правильно держать нож, готовить соусы, освойте базовые техники</p>
+                        <div class="course-info">
+                            <span><i class="far fa-clock"></i> 24 часа</span>
+                            <span><i class="fas fa-user-friends"></i> 8 занятий</span>
+                            <span class="course-price">12 900 ₽</span>
+                        </div>
+                        <button class="btn btn-outline enroll-btn">Записаться</button>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-category="advanced">
+                    <div class="course-image">
+                        <img src="data:image/jpeg;base64,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" alt="Итальянская кухня">
+                    </div>
+                    <div class="course-content">
+                        <span class="course-category">Итальянская</span>
+                        <h3>Паста и ризотто</h3>
+                        <p>Настоящая итальянская паста, соусы и ризотто от шефа из Милана</p>
+                        <div class="course-info">
+                            <span><i class="far fa-clock"></i> 18 часов</span>
+                            <span><i class="fas fa-user-friends"></i> 6 занятий</span>
+                            <span class="course-price">15 500 ₽</span>
+                        </div>
+                        <button class="btn btn-outline enroll-btn">Записаться</button>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-category="professional">
+                    <div class="course-image">
+                        <img src="https://a-catering.com/image/statiy/molecular-cuisine.jpeg" alt="Высокая кухня">
+                    </div>
+                    <div class="course-content">
+                        <span class="course-category">Высокая кухня</span>
+                        <h3>Молекулярная кухня</h3>
+                        <p>Современные техники, сферификация, эмульсии и гастрономические инновации</p>
+                        <div class="course-info">
+                            <span><i class="far fa-clock"></i> 36 часов</span>
+                            <span><i class="fas fa-user-friends"></i> 12 занятий</span>
+                            <span class="course-price">42 000 ₽</span>
+                        </div>
+                        <button class="btn btn-outline enroll-btn">Записаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="chefs" id="chefs">
+        <div class="container">
+            <h2 class="section-title">Наши шеф-повара</h2>
+            <div class="chefs-grid">
+                <div class="chef-card">
+                    <div class="chef-image">
+                        <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Шеф Анна">
+                    </div>
+                    <h3>Артем Вольский</h3>
+                    <p class="chef-title">Эксперт по французской кухне</p>
+                    <p>Работала в ресторанах Парижа, обладательница двух мишленовских звезд</p>
+                </div>
+                
+                <div class="chef-card">
+                    <div class="chef-image">
+                        <img src="https://images.unsplash.com/photo-1595475038784-bbe439ff41e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Шеф Марко">
+                    </div>
+                    <h3>Марко Риччи</h3>
+                    <p class="chef-title">Шеф из Италии</p>
+                    <p>Специалист по средиземноморской кухне с 15-летним опытом</p>
+                </div>
+                
+                <div class="chef-card">
+                    <div class="chef-image">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Шеф Дмитрий">
+                    </div>
+                    <h3>Дмитрий Орлов</h3>
+                    <p class="chef-title">Эксперт по фьюжн-кухне</p>
+                    <p>Объединяет восточные и европейские традиции, автор кулинарных книг</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 class="section-title">Запишитесь на пробный урок</h2>
+                    <p>Попробуйте бесплатный мастер-класс и почувствуйте атмосферу наших занятий</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Адрес</h4>
+                                <p>Нальчик, ул. Кулинарная, 24</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Телефон</h4>
+                                <p>+7 (928) 713-45-67</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>gustomaster@mail.ru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="enrollForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Телефон" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="course" required>
+                                <option value="" disabled selected>Выберите курс</option>
+                                <option value="Основы кулинарии">Основы кулинарии</option>
+                                <option value="Паста и ризотто">Паста и ризотто</option>
+                                <option value="Молекулярная кухня">Молекулярная кухня</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">
+                        <i class="fas fa-utensils"></i>
+                        <span>GustoMaster</span>
+                    </a>
+                    <p>Искусство готовить доступно каждому</p>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy;GustoMaster.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Заявка отправлена!</h3>
+            <p>Мы свяжемся с вами в течение 24 часов для уточнения деталей.</p>
+            <button class="btn btn-primary close-modal-btn">Отлично</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
